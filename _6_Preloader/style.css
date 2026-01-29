@@ -1,0 +1,51 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #020617;
+}
+
+.preloader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+svg {
+  width: 150px;
+  height: 150px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: #1e293b;
+}
+
+#progress {
+  stroke: #22d3ee;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  filter: drop-shadow(0 0 10px #22d3ee);
+  transition: stroke-dashoffset 0.2s linear;
+}
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #e0f2fe;
+  font-family: monospace;
+}

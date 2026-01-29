@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle, #020024, #000);
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
